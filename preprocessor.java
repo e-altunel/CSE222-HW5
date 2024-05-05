@@ -1,26 +1,26 @@
 public class preprocessor {
-	private String initial_string;
-	private String preprocessed_string;
-		
-	public preprocessor(String str) {
+  private String initial_string;
+  private String preprocessed_string;
 
-	}
+  public preprocessor(String str) {
 
-	public void preprocess() {
-		// do not edit this method
-		capitalize();
-		clean();
-	}
-	
-	private void capitalize() {
+  }
 
-	}
+  public void preprocess() {
+    // do not edit this method
+    capitalize();
+    clean();
+  }
 
-	private void clean() {
+  private void capitalize() {
 
-	}
-	
-	public String get_preprocessed_string() {
+  }
 
-	}
+  private void clean() {
+
+  }
+
+  public String get_preprocessed_string() {
+
+  }
 }
