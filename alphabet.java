@@ -22,9 +22,19 @@ public class alphabet {
   }
 
   private void fill_map() {
-    // You must use the "english_alphabet" variable in this method, to fill the
-    // "map" variable.
-    // You can define 1 or 2 iterators to iterate through the set items.
+    Iterator<Character> iterator = english_alphabet.iterator();
+
+    while (iterator.hasNext()) {
+      char key = iterator.next();
+      Map<Character, Character> innerMap = new HashMap<>();
+
+      for (int i = 0; i < english_alphabet.size(); i++) {
+        char value = (char) ('A' + (i + key - 'A') % 26);
+        innerMap.put((char) ('A' + i), value);
+      }
+
+      map.put(key, innerMap);
+    }
   }
 
   public void print_map() {
@@ -41,6 +51,6 @@ public class alphabet {
   }
 
   public Map get_map() {
-
+    return map;
   }
 }
